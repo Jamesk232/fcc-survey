@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey</title>
+	<meta charset="utf-8">
+	<meta http-equiv="refresh" content="3">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div id="container">
+		<div id="title-wrapper">
+			<h1 id="title">Marriage Survey</h1>
+			<p id="description">This survey's purpose is to find out why young people are putting off or deciding not to get married.</p>
+		</div>
+		<form id="survey-form">
+
+			<div class="row">
+				<div class="label">
+					<label id="name-label" for="name">Name:</label>
+				</div>
+				<div class="input">
+					<input type="text" id="name" name="name" placeholder="Enter First and Last name" required>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="label">
+					<label id="email-label" for="email">Email:</label>
+				</div>
+				<div class="input">
+					<input type="email" id="email" name="email" placeholder="Enter Email Address" required>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="label">
+					<label id="number-label" for="age">Age:</label>
+				</div>
+				<div class="input">
+					<input id="number" type="number" name="age" id="age" min="18" max="110" placeholder="Enter Your Age" style="width: 50%;">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="label">
+					<label for="dropdown">Are you married?</label>
+				</div>
+				<div class="input">
+					<select id="dropdown" name="are-married" class="married">
+						<option value="yes">Yes</option>
+						<option value="no" selected>No</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="label">
+					<label for="future">Do you plan on getting married?</label>
+				</div>
+				<div class="input">
+					<select id="future" name="future" class="future">
+						<option value="yes" selected>Yes</option>
+						<option value="no">No</option>
+						<option value="maybe">Maybe</option>
+						<option value="na">N/A</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="label topme">
+					<label for="dating">How long do you think you should be dating before you marry?</label>
+				</div>
+				<div class="input">
+					<ul id="dating">
+						<li class="radios">
+							<label><input type="radio" name="how-long" value="one-month">One Month</label>
+						</li>
+						<li class="radios">
+							<label><input type="radio" name="how-long" value="six-months">Six Months</label>
+						</li>
+						<li class="radios">
+							<label><input type="radio" name="how-long" value="one-year">One Year or more</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="label topme">
+					<label for="number-of-gf">How long do you think you should be dating before you marry?</label>
+				</div>
+				<div class="input">
+					<ul id="number-of-gf">
+						<li class="checkboxes">
+							<label><input type="checkbox" name="how-many" value="0">None</label>
+						</li>
+						<li class="checkboxes">
+							<label><input type="checkbox" name="how-many" value="three">three</label>
+						</li>
+						<li class="checkboxes">
+							<label><input type="checkbox" name="how-many" value="not-sure">I'm confused and I'm not sure about some of the dates</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="end-survey">
+				<p style="padding-bottom: 10px;">What other additional comments or nagging thoughts do you have about marriage in the 21st century?</p>
+				<textarea placeholder="Any additional comments?"></textarea>
+				<div class="btn"><button type="submit" id="submit">Submit</button></div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
